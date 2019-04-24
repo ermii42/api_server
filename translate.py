@@ -30,7 +30,7 @@ def get_lang(text):
     }
     response = requests.get(url, params)
     json = response.json()
-    if json['lang'] in  ["en", "ru"]:
+    if json['lang'] in ["en", "ru"]:
         return json['lang']
     return
 
